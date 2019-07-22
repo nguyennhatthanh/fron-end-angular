@@ -1,0 +1,7 @@
+<p>blog works!</p>
+<ul>
+    <li *ngFor="let item of youtubeService.blog">
+        <a [routerLink]="['/blog',item.url]">{{item.blog}}</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>
